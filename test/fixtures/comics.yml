@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  full_path: MyString
+  size: 1
+  issue_number: 1
+  pub_year: 1
+  pub_month: 1
+  extension: MyString
+  title_id: 1
+
+two:
+  full_path: MyString
+  size: 1
+  issue_number: 1
+  pub_year: 1
+  pub_month: 1
+  extension: MyString
+  title_id: 1
