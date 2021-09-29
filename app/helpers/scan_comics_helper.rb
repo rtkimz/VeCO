@@ -1,0 +1,2 @@
+module ScanComicsHelper
+end
