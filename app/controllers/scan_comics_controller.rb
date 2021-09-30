@@ -1,2 +1,0 @@
-class ScanComicsController < ApplicationController
-end
