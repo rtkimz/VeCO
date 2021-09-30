@@ -11,4 +11,7 @@ module ApplicationHelper
     '%.1f %s' % [size.to_f / 1024 ** exp, units[exp]]
   end
 
+  def comic_link_to(text, href)
+    "<a href='/#{href}'>#{text}</a>".html_safe
+  end
 end
