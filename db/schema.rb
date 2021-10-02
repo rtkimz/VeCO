@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2021_09_20_013940) do
 
   create_table "characters", force: :cascade do |t|
     t.string "name", default: "various"
-    t.string "publisher"
+    t.string "publisher", default: "unknown"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -39,8 +39,8 @@ ActiveRecord::Schema.define(version: 2021_09_20_013940) do
 
   create_table "titles", force: :cascade do |t|
     t.string "name"
-    t.integer "publisher_id"
-    t.integer "character_id"
+    t.integer "publisher_id", default: 1
+    t.integer "character_id", default: 1
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
