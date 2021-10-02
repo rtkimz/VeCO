@@ -1,0 +1,8 @@
+<table class="item_center">
+<% @titles.each do |title| %>
+  <tr>
+    <td><a href="/title/<%= title.id %>/edit"><%= image_tag "edit.png", alt: "edit", height: "20" %></a></td>
+    <td class="title"><%= link_to "#{title.name}", title %></td>
+  </tr>
+<% end %>
+</table>
