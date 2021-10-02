@@ -1,11 +1,17 @@
 class TitlesController < ApplicationController
 
   def index
-    @comics = Comic.joins(title: :publisher, title: :character)
+    # @comics = Comic.joins(title: :publisher, title: :character)
+    # @titles = Title.joins(:publisher, :character)
+    @titles = Title.all
+  end
+
+  def show
+    @comics = Comic.where(title_id: params[:id]).order(:issue_number)
     @titles = Title.joins(:publisher, :character)
   end
 
-  def create 
+  def create
   end
 
   def edit

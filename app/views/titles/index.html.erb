@@ -1,0 +1,8 @@
+<h2>The Titles index page</h2>
+<section>
+  <% @titles.each do |t| %>
+  <h3>
+    Title: <%= t.name %> &nbsp Pub: <%= t.publisher_id %> &nbsp Char: <%= t.character_id %>
+  </h3>
+  <% end %>
+</section>
