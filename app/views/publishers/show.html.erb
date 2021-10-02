@@ -1,0 +1,5 @@
+<div class="pub_grid">
+  <% @char_set.each do |ch_id, ch_name| %>
+    <div><a href="/character/<%= ch_id %>"><%= ch_name %></a></div>
+  <% end %>
+</div>

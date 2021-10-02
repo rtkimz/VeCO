@@ -1,0 +1,7 @@
+<div class="flex">
+  <% @publishers.each do |pub| %>
+    <%= link_to pub do %>
+      <%= image_tag "publishers/#{pub.name}.png", alt: "#{pub.name}", width: "150" %>
+    <% end %>
+  <% end %>
+</div>
