@@ -30,24 +30,13 @@ def walk(start)
       size = File.size(path)
       path = path[7..-1] #cut off the "public/" part of the path
       if ext == "cbr" || ext == "cbz"
-        title_id = title_exist(title)
+        title_id = Title.find_or_create_by!(name: title).id
         if !Comic.exists?(full_path: path)
           Comic.create(full_path: path, title_id: title_id, issue_number: issue, extension: ext, size: size)
         end
       end
     end
   end
-end
-
-# if title not in db, insert it. return the title ID
-def title_exist(title)
-  
-  if Title.find_by(name: title) == nil
-    puts "This is the TITLE: #{title}\n"
-    Title.create(name: title)
-    puts "This is the record::: #{Title.find_by(name: title)}"
-  end
-  (Title.find_by(name: title)).id
 end
 
 # read in a list of publishers
