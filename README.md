@@ -47,6 +47,9 @@ access the server (ie http://localhost:3000 or http://192.168.1.xxx:3000)
 * Make comics viewable (like a slideshow of pages) in the browser
 * Add more characters to the data file
 * clean up the interface
+  * add header and footer
+  * add navigation 
+* re-design publishers page and functionality 
 
 ## Author
 
