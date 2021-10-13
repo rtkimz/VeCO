@@ -55,10 +55,13 @@ main {
 }
 
 footer {
+  width: 100%;
   font-family: "Komika Hand";
   font-size: 0.4em;
   text-align: center;
   grid-area: foot;
+  position: absolute;
+  bottom: 20px;
 }
 
 h2 {
